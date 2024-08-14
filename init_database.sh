@@ -1,0 +1,2 @@
+rm *leafFile
+rm *treeNodeFile

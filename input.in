@@ -1,0 +1,28 @@
+login -i 0 -p admin
+logout
+login -i 0 -p qwq
+login -i 0 -p admin
+register -u user -p 123456 -i 1
+logout
+login -i 1 -p 123456
+query_profile -i 0
+modify_password -i 0 -p 147258
+logout
+login -i 0 -p admin
+query_profile -i 1
+modify_password -i 1 -p 987654
+modify_privilege -i 1 -g 2
+query_profile -i 1
+add_train -i SJTUTRAIN -n 3 -m 1000 -s SiyuanGate|ZhiyuanCollege|HanzeLake -p 100|200 -x 19:19 -t 20|20
+display_route -s SiyuanGate -t ZhiyuanCollege
+query_train -i FDUTRAIN
+query_train -i SJTUTRAIN
+buy_ticket -i SJTUTRAIN -d 06-05 -f SiyuanGate
+release_ticket -i SJTUTRAIN -d 06-05
+buy_ticket -i SJTUTRAIN -d 06-05 -f ZhiyuanCollege
+expire_ticket -i SJTUTRAIN -d 06-05
+buy_ticket -i SJTUTRAIN -d 06-05 -f SiyuanGate
+query_order
+refund_ticket -i SJTUTRAIN -d 06-05 -f SiyuanGate
+query_order
+exit

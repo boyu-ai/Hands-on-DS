@@ -1,0 +1,22 @@
+BasedOnStyle: Google
+IndentWidth: 2
+---
+Language: Cpp
+DerivePointerAlignment: false
+PointerAlignment: Right
+ColumnLimit: 80
+AlignAfterOpenBracket: DontAlign
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortBlocksOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+---
+# Enable Customized Space Insertion If Clang-Format Version >= 14
+# SpaceBeforeParens: Custom
+# SpaceBeforeParensOptions:
+#   AfterControlStatements: true
+#   AfterFunctionDefinitionName: false
+#   AfterOverloadedOperator: true
+#   BeforeNonEmptyParentheses: false
+---
+
