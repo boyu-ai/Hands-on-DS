@@ -2,11 +2,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.16)
 PROJECT(TrainSystem)
 
 SET(CMAKE_CXX_STANDARD 14)
-# SET(CMAKE_CXX_FLAGS "-Ofast")
-
-# for local test
-SET(CMAKE_CXX_FLAGS "-fsanitize=address -g -ftrapv -Wall -Wextra")
-# SET(CMAKE_CXX_STACK_SIZE "419430400")
+SET(CMAKE_CXX_FLAGS "-O2")
 
 AUX_SOURCE_DIRECTORY(./trainsys SRC)
 
