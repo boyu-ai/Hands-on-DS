@@ -19,6 +19,8 @@ StationManager::StationManager(const char * filename) {
         idToName.insertEntry(stationID, String(stationName));
         nameToID.insertEntry(String(stationName), stationID);
     }
+    idToName.sortEntry();
+    nameToID.sortEntry();
 }
 
 // 根据车站ID获取车站名称
